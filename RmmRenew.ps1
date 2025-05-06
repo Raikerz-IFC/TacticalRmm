@@ -1,5 +1,5 @@
 $logFile = "C:\Windows\Temp\tactical_rmm_log.txt"
-
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 # Fonction de log
 function Write-Log {
     param([string]$message)
